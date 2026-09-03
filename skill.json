@@ -1,0 +1,42 @@
+{
+  "name": "genpark-agentic-one-click-instant-buy-token-broker-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Agentic one-click instant buy token broker executing zero-friction headless checkout across verified merchant API endpoints.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "perplexity-buy",
+    "instant-checkout",
+    "headless-commerce",
+    "token-broker",
+    "one-click-buy"
+  ],
+  "inputs": {
+    "merchant_id": {
+      "type": "string"
+    },
+    "cart_items": {
+      "type": "array"
+    },
+    "encrypted_vault_buyer_token": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "instant_buy_order_id": {
+      "type": "string"
+    },
+    "total_charged_usd": {
+      "type": "number"
+    },
+    "order_confirmation_code": {
+      "type": "string"
+    },
+    "receipt_pdf_download_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
